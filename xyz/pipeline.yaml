@@ -3,13 +3,13 @@ kind: WorkflowTemplate
 metadata:
   name: evenOrOddExecutableID # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
   annotations:
-    scenarios.ai.sap.com/description: EVENorODD"
+    scenarios.ai.sap.com/description: "EVENorODD"
     scenarios.ai.sap.com/name: "findEvenOrOdd"
     executables.ai.sap.com/description: "evenOrOddIdentify"
-    executables.ai.sap.com/name: "evenOrOddApp
+    executables.ai.sap.com/name: "evenOrOddApp"
   labels:
     scenarios.ai.sap.com/id: "learning-code"
-    ai.sap.com/version: "1.0"
+    ai.sap.com/version: "1.0" 
 spec:
   imagePullSecrets:
     - name: credstutorialrepo # your docker registry secret
