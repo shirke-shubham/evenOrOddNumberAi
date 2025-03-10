@@ -21,4 +21,4 @@ spec:
       image: docker.io/shirke0706/even_odd:01 # Your docker image name 
       command: ["/bin/sh", "-c"]
       args: 
-        - "python /app/arc/main.py" 
+        - "python /app/src/main.py"  
