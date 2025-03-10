@@ -21,4 +21,4 @@ spec:
       image: docker.io/shirke0706/hello-world-new-app:02 # Your docker image name 
       command: ["/bin/sh", "-c"]
       args: 
-        - "python /app/main.py" 
+        - "python /app/src/main.py" 
