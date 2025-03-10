@@ -16,16 +16,10 @@ spec:
   entrypoint: mycodeblock03
   templates: 
  
-  - name: mycodeblock02
+    - name: mycodeblock02
     container:
-      image: docker.io/shirke0706/even_odd:01 # Your docker image name 
+      image: docker.io/shirke0706/even_odd:02 # Updated Docker image
       command: ["/bin/sh", "-c"]
       args: 
         - "python /app/src/main.py"  
-
- - name: mycodeblock03
-    container:
-      image: docker.io/shirke0706/even_odd:02 # Your docker image name 
-      command: ["/bin/sh", "-c"]
-      args: 
-        - "python /app/src/main.py"  
+ 
