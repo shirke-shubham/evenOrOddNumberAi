@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: evenOrOddExecutableID # Executable ID, must be unique
+  name: evenoddexecutableid # Executable ID, must be unique
   annotations:
     scenarios.ai.sap.com/description: "EVENorODD"
     scenarios.ai.sap.com/name: "findEvenOrOdd"
