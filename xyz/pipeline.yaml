@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: deployment01 # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
+  annotations:
+    scenarios.ai.sap.com/description: EVENorODD"
+    scenarios.ai.sap.com/name: "findEvenOrOdd"
+    executables.ai.sap.com/description: "evenOrOddIdentify"
+    executables.ai.sap.com/name: "evenOrOddApp
+  labels:
+    scenarios.ai.sap.com/id: "learning-code"
+    ai.sap.com/version: "1.0"
+spec:
+  imagePullSecrets:
+    - name: credstutorialrepo # your docker registry secret
+  entrypoint: mycodeblock1
+  templates: 
+
+  - name: mycodeblock1
+    container:
+      image: docker.io/shirke0706/hello-world-new-app:02 # Your docker image name 
+      command: ["/bin/sh", "-c"]
+      args: 
+        - "python /app/main.py" 
