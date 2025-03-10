@@ -13,7 +13,7 @@ metadata:
 spec:
   imagePullSecrets:
     - name: credstutorialrepo # your docker registry secret
-  entrypoint: mycodeblock03
+  entrypoint: mycodeblock02
   templates: 
  
     - name: mycodeblock02
