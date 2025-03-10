@@ -18,7 +18,7 @@ spec:
 
   - name: mycodeblock1
     container:
-      image: docker.io/shirke0706/hello-world-new-app:02 # Your docker image name 
+      image: docker.io/shirke0706/even_odd:02 # Your docker image name  
       command: ["/bin/sh", "-c"]
       args: 
         - "python /app/src/main.py" 
